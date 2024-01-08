@@ -1,0 +1,19 @@
+/* about-me */
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-me img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.about-me section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
