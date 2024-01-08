@@ -4,34 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Sousa</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Sua Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-4">
         <h1>Sua Landing Page</h1>
     </header>
 
-    <section>
-        <h2>Bem-vindo à nossa página!</h2>
-        <p>Uma breve descrição ou introdução sobre o que sua landing page oferece.</p>
+    <section class="container mt-4">
+        <h2 class="text-center">Bem-vindo à nossa página!</h2>
+        <p class="text-center">Uma breve descrição ou introdução sobre o que sua landing page oferece.</p>
     </section>
 
-    <div class="features">
-        <h2>Recursos</h2>
-        <ul>
+    <div class="container features mt-4 bg-gradient data-js">
+        <h2 class="text-center">Projetos de JavaScript</h2>
+        <ul class="d-flex justify-content-between list-unstyled">
             <li>Recurso 1</li>
             <li>Recurso 2</li>
             <li>Recurso 3</li>
         </ul>
     </div>
 
-    <form>
-        <h2>Inscreva-se para receber atualizações</h2>
-        <input type="email" placeholder="Seu e-mail" required>
-        <button type="submit">Inscrever-se</button>
-    </form>
+    <div class="container features mt-4 bg-gradient data-python">
+      <h2 class="text-center">Projetos em Python</h2>
+      <ul class="d-flex justify-content-between list-unstyled">
+        <li>Recurso 1</li>
+        <li>Recurso 2</li>
+        <li>Recurso 3</li>
+    </ul>
+  </div>
 
     <script src="script.js"></script>
 </body>
