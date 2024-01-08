@@ -4,40 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Landing Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Portfólio de David Sousa</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <header class="bg-dark text-white text-center py-4">
-        <h1>Sua Landing Page</h1>
+    <header>
+        <div class="container">
+            <h1>David Sousa</h1>
+            <p>Programador Web Full Stack</p>
+        </div>
     </header>
 
-    <section class="container mt-4">
-        <h2 class="text-center">Bem-vindo à nossa página!</h2>
-        <p class="text-center">Uma breve descrição ou introdução sobre o que sua landing page oferece.</p>
-    </section>
+    <div class="container text-light">
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou David Sousa, um programador apaixonado por criar soluções web inovadoras. Minha experiência inclui o uso de HTML, CSS, JavaScript, Node.js, Electron e Python para automação.</p>
+        </section>
 
-    <div class="container features mt-4 bg-gradient data-js">
-        <h2 class="text-center">Projetos de JavaScript</h2>
-        <ul class="d-flex justify-content-between list-unstyled">
-            <li>Recurso 1</li>
-            <li>Recurso 2</li>
-            <li>Recurso 3</li>
-        </ul>
+        <section>
+          <h2>Projetos</h2>
+          <div class="container container-itens">
+            <div class="skill-item">
+              <h5 class="card-title">Projeto 1</h5>
+              <p class="card-text">Descrição do projeto 1.</p>
+          </div>
+          <div class="skill-item">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">Descrição do projeto 2.</p>
+          </div>
+          <div class="skill-item">
+              <h5 class="card-title">Projeto 3</h5>
+              <p class="card-text">Descrição do projeto 3.</p>
+          </div>
+          </div>
+      </section>
+      
+      <section>
+          <h2>Habilidades</h2>
+          <div class="container container-itens">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Electron</div>
+            <div class="skill-item">Python</div>
+          </div>
+      </section>
     </div>
 
-    <div class="container features mt-4 bg-gradient data-python">
-      <h2 class="text-center">Projetos em Python</h2>
-      <ul class="d-flex justify-content-between list-unstyled">
-        <li>Recurso 1</li>
-        <li>Recurso 2</li>
-        <li>Recurso 3</li>
-    </ul>
-  </div>
+    <footer class="text-center text-light">
+        <p>Entre em contato: davidlsousa.dev@gmail.com</p>
+    </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
