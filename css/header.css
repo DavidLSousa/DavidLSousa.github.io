@@ -1,13 +1,13 @@
 /* about-me */
 .about-me {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 
 .about-me img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 

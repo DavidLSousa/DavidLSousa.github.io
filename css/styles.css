@@ -30,16 +30,10 @@ section {
 
 h1 {
   color: var(--primary-color);
-  font-weight: bold !important;
-  font-size: 4rem !important;
 }
 
 h2, h3 {
   color: var(--light-blue);
-}
-
-.full-page {
-  height: 100vh;
 }
 
 footer {
@@ -47,6 +41,10 @@ footer {
   background: var(--primary-color);
   color: var(--light-blue);
   font-weight: bold !important;
+}
+
+footer a {
+  color: #ffffff;
 }
 
 footer a:hover {
