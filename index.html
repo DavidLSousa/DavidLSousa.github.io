@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio de David Sousa</title>
 
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  
-    <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="./css/popup/responsive-popup-form.css">
+  <link rel="stylesheet" href="./css/popup/style-popup-form.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/sections.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script defer src="./js/popup-form/script-popup-form-email.js"></script>
+  <script defer src="./js/main.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,32 +68,70 @@
         <a href="https://calculadora-davidlsousa.netlify.app" class="text-decoration-none text-white">
           <div class="skill-item">
             <h5 class="card-title">Calculadora</h5>
-            <p class="card-text">Descrição do projeto 1.</p>
+            <p class="card-text">Tentativa de algo simples porem funcional!</p>
           </div>
         </a>
         <a href="https://todo-list-davidlsousa.netlify.app" class="text-decoration-none text-white">
           <div class="skill-item">
             <h5 class="card-title">Todo List</h5>
-            <p class="card-text">Descrição do projeto 2.</p>
+            <p class="card-text">Um meio de não esquecer o que tem pra fazer...</p>
           </div>
         </a>
         <a href="#" class="text-decoration-none text-white">
           <div class="skill-item">
             <h5 class="card-title">Weather App</h5>
-            <p class="card-text">Descrição do projeto 3.</p>
+            <p class="card-text">Será que vai chover?</p>
           </div>
         </a>
       </div>
-  </section>
+    </section>
   </div>
 
-  <footer class="text-center text-light ">
+  <div class="popup-form-email close-popup hidden">
+    <div class="container text-light container-form">
+      <h2 class="text-center">
+        Envie seu email
+      </h2>
+    
+      <form 
+      action="https://formsubmit.co/ajax/davidlsousa.dev@gmail.com " 
+      method="post" 
+      class="form">
+      
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" required value="David Sousa">
+        </div>
+    
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" required value="davidlucas.se@gmail.com">
+        </div>
+    
+        <div class="mb-3">
+          <label for="mgs" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mgs" rows="3" name="mgs" required>Teste</textarea>
+        </div>
+    
+        <button type="submit" class="btn btn-lg btn-block button text-light">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- <footer class="text-center text-light ">
       <p>Entre em contato: 
-        <a href="#" class="text-decoration-none">
+        <a href="pages/popup-form-email.html" class="text-decoration-none link-form-email">
           davidlsousa.dev@gmail.com
         </a>
       </p>
-  </footer>
+  </footer> -->
+  <footer class="text-center text-light ">
+    <p>Entre em contato: 
+      <span class="link-form-email">davidlsousa.dev@gmail.com</span>
+    </p>
+</footer>
 </body>
 
 </html>

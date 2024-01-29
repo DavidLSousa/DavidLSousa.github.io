@@ -44,9 +44,14 @@ footer {
 }
 
 footer a {
+  padding: 1rem;
   color: #ffffff;
 }
 
 footer a:hover {
   color: var(--light);
+} 
+
+footer .link-form-email:hover {
+  cursor: pointer;
 }
