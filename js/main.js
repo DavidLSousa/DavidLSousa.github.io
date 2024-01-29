@@ -13,7 +13,10 @@ const closePopup = event => {
 linkFormEmail.addEventListener('click', () => {
   showPopup()
 
-  const formEmail = new FormEmail('.form')
+  const formEmail = new FormEmail({
+    form: '.form',
+    button: '.button'
+  })
   formEmail.init()
 })
 

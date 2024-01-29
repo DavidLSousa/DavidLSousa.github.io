@@ -1,6 +1,7 @@
 class FormEmail {
-  constructor(form) {
-    this.form = document.querySelector(form);
+  constructor(setting) {
+    this.form = document.querySelector(setting.form);
+    this.button = document.querySelector(setting.button);
     if (this.form) this.url = this.form.getAttribute("action");
 
     this.sendForm = this.sendForm.bind(this);
@@ -29,8 +30,14 @@ class FormEmail {
     );
   }
 
-  async sendForm(event) {
+  isSubmission(event) {
     event.preventDefault();
+    this.button.innerText = 'Enviando...'
+    this.button.disabled = true
+  }
+
+  async sendForm(event) {
+    this.isSubmission(event)
 
     try {
       await fetch(this.url, {
