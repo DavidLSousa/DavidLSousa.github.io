@@ -8,20 +8,16 @@ class FormEmail {
 
   displaySuccess() {
     this.form.parentElement.innerHTML = `
-      <div class="container container-form">
-        <h2 class="text-center success">
-          Enviado com sucesso!
-        </h2>
-      </div>`;
+      <h2 class="text-center success">
+        Enviado com sucesso!
+      </h2>`;
   }
 
   displayError() {
     this.form.parentElement.innerHTML = `
-      <div class="container container-form">
-        <h2 class="text-center error">
-          Falha no Envio :(
-        </h2>
-      </div>`;
+      <h2 class="text-center error">
+        Falha no Envio :(
+      </h2>`;
   }
 
   getFormInfo() {

@@ -1,13 +1,13 @@
 const linkFormEmail = document.querySelector('.link-form-email')
 const containerForm = document.querySelector('.popup-form-email')
 
-const closePopup = () => {
-  if (containerForm.classList.contains('close-popup')) 
-    containerForm.classList.add('hidden')
-}
-
 const showPopup = () => {
   containerForm.classList.remove('hidden')
+}
+
+const closePopup = event => {
+  if (event.target.classList.contains('close-popup')) 
+    containerForm.classList.add('hidden')
 }
 
 linkFormEmail.addEventListener('click', () => {
@@ -17,4 +17,4 @@ linkFormEmail.addEventListener('click', () => {
   formEmail.init()
 })
 
-containerForm.addEventListener('click', closePopup())
+containerForm.addEventListener('click', closePopup)
