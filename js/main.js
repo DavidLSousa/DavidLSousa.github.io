@@ -10,7 +10,7 @@ const closePopup = event => {
     containerForm.classList.add('hidden')
 }
 
-linkFormEmail.addEventListener('click', () => {
+const handleSubmitForm = () => {
   showPopup()
 
   const formEmail = new FormEmail({
@@ -18,6 +18,7 @@ linkFormEmail.addEventListener('click', () => {
     button: '.button'
   })
   formEmail.init()
-})
+}
 
+linkFormEmail.addEventListener('click', handleSubmitForm)
 containerForm.addEventListener('click', closePopup)
