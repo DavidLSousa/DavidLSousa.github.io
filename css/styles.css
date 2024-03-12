@@ -55,3 +55,7 @@ footer a:hover {
 footer .link-form-email:hover {
   cursor: pointer;
 }
+
+.img-cover {
+  object-fit: cover;
+}
