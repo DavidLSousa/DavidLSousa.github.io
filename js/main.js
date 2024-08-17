@@ -1,9 +1,7 @@
-const linkFormEmail = document.querySelector('.link-form-email')
-const containerForm = document.querySelector('.popup-form-email')
+import { FormEmail } from  './popup-form/script-popup-form-email.js';
 
-const showPopup = () => {
-  containerForm.classList.remove('hidden')
-}
+const linkFormEmail = document.querySelector('[data-js="link-form-email"]')
+const containerForm = document.querySelector('[data-js="popup-form-email"]')
 
 const closePopup = event => {
   if (event.target.classList.contains('close-popup')) 
@@ -14,8 +12,8 @@ const handleSubmitForm = () => {
   showPopup()
 
   const formEmail = new FormEmail({
-    form: '.form',
-    button: '.button'
+    form: '[data-js="form-popup"]',
+    button: '[data-js="btn-popup"]'
   })
   formEmail.init()
 }
@@ -24,8 +22,7 @@ linkFormEmail.addEventListener('click', handleSubmitForm)
 containerForm.addEventListener('click', closePopup)
 
 /*
-  [ ] Links para:
+  Links para:
     [ ] GitHub
     [ ] Linkedin
-  [ ] Links para cada repositório
-*/
+  */

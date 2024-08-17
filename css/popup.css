@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #001f3f;
+  --secondary-color: #000000;
+  --light: #ffffff;
+  --light-blue: #808F9F
+}
+
+.success{
+  color: var(--primary-color);
+}
+
+.error {
+  color: tomato;
+}

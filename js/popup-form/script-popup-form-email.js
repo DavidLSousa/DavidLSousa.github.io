@@ -1,4 +1,4 @@
-class FormEmail {
+export class FormEmail {
   constructor(setting) {
     this.form = document.querySelector(setting.form);
     this.button = document.querySelector(setting.button);
