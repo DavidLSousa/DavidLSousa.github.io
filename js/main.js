@@ -8,6 +8,10 @@ const closePopup = event => {
     containerForm.classList.add('hidden')
 }
 
+const showPopup = () => {
+  containerForm.classList.remove('hidden')
+}
+
 const handleSubmitForm = () => {
   showPopup()
 
