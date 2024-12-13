@@ -27,6 +27,6 @@ containerForm.addEventListener('click', closePopup)
 
 /*
   Links para:
-    [ ] GitHub
-    [ ] Linkedin
+    [x] GitHub
+    [x] Linkedin
   */
