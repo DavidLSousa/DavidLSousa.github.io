@@ -1,0 +1,14 @@
+:root {
+    --bg-color-light: #fffbf8;
+    --bg-color-brown: #403029;
+}
+
+.bg-light{
+    color: var(--bg-color-light);
+}
+
+.bg-brown{
+    color: var(--bg-color-brown);
+}
+
+/* Não funciona */

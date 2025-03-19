@@ -24,9 +24,3 @@ const handleSubmitForm = () => {
 
 linkFormEmail.addEventListener('click', handleSubmitForm)
 containerForm.addEventListener('click', closePopup)
-
-/*
-  Links para:
-    [x] GitHub
-    [x] Linkedin
-  */

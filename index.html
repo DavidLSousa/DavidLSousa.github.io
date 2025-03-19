@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de David Sousa</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="/css/default.css">
 
     <script defer type="module" src="./js/main.js"></script>
 </head>
@@ -16,7 +18,7 @@
 <body class="bg-gradient-to-b from-blue-900 to-black text-white font-mono">
 
     <header class="flex flex-col items-center justify-center h-screen bg-white text-center">
-        <img class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover mb-8" src="/assets/photos/ft.jpg"
+        <img class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover mb-8" src="/assets/photos/ft_portfolio.png"
             alt="minha foto">
 
         <div>
@@ -40,15 +42,17 @@
     </header>
 
     <div class="container mx-auto p-8">
-        <section class="text-center mb-16">
-            <h2 class="text-4xl mb-4">Sobre Mim</h2>
-            <!-- <p class="text-lg">Olá! Sou David Sousa, um programador interessado em criar soluções web inovadoras. Sou
-                desenvolvedor Full Stack em formação acadêmica e com experiência em projetos da área. Possuo habilidades
-                abrangentes em HTML, CSS, JavaScript, Node.js, Electron.</p> -->
-            <p class="text-lg">
+        <section class="mb-16">
+            <h2 class=" text-center text-4xl mb-4">Sobre Mim</h2>
+            <!-- <p class="text-lg">
                 Olá! Sou David Sousa, programador com foco em segurança cibernética, com excelente 
                 habilidade de comunicação. Minha compreensão tanto da programação quanto da segurança permite 
                 desenvolver softwares que asseguram a proteção dedados e mitigam riscos em ambientes digitais dinâmicos.
+            </p> -->
+            <p class="text-lg text-justify">
+                Desenvolvedor de Software com experiência em Vue.js, Node.js, .NET e .NET MAUI, buscando sempre desenvolver aplicações escaláveis e bem estruturadas.  Tenho conhecimento em cibersegurança, o que me permite desenvolver com uma abordagem mais consciente em relação à segurança e com uma boa base em redes. 
+                <br>
+                Além disso, estou sempre aprimorando minhas habilidades e explorando novas tecnologias para entregar software de alta qualidade. Busco oportunidades para aplicar minhas habilidades e contribuir para o desenvolvimento de soluções inovadoras.
             </p>
         </section>
 
@@ -59,15 +63,13 @@
                 <a href="https://github.com/DavidLSousa/app_investment"
                     class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">
                     <h5 class="text-xl font-bold mb-2">App Investment</h5>
-                    <p class="text-gray-400">App para gerenciar ativos de investimento com Jinja2, TailwindCSS, e Flask com Peewee e MySQL. 
-                        Usando containerizado com Docker e os testes com Pytest.</p>
+                    <p class="text-gray-400">Desenvolvimento de uma aplicação web utilizando Vue.js e .NET para gerenciamento de investimentos. A plataforma permite o controle detalhado de ativos na bolsa, oferecendo histórico completo e acompanhamento em tempo real das variações do portfólio. Usando containerizado com Docker.</p>
                 </a>
 
                 <a href="https://github.com/DavidLSousa/theflashcards"
                     class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">
                     <h5 class="text-xl font-bold mb-2">The Flash Cards</h5>
-                    <p class="text-gray-400">App para criar cartões de pergunta e resposta.
-                        Feito em .NET MAUI, para Android e Windows.</p>
+                    <p class="text-gray-400">Desenvolvimento de um aplicativo multiplataforma (Desktop e Android) em .NET MAUI para criação de cartões de estudo com perguntas e respostas. Permite a montagem de simulados por categoria, registra acertos e erros e exibe estatísticas em um dashboard.</p>
                 </a>
 
                 <!-- <a href="https://calculadora-davidlsousa.netlify.app"
@@ -88,10 +90,16 @@
                     <p class="text-gray-400">Já precisou verificar se o CPF de alguém está correto?</p>
                 </a> -->
 
-                <a href="https://weather-app-davidlsousa.netlify.app/" target="_blank"
+                <!-- <a href="https://weather-app-davidlsousa.netlify.app/" target="_blank"
                     class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">
                     <h5 class="text-xl font-bold mb-2">Weather App</h5>
                     <p class="text-gray-400">Será que vai chover?</p>
+                </a> -->
+
+                <a href="#" target="_blank"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">
+                    <h5 class="text-xl font-bold mb-2">Challenge FIAP e Fortinet</h5>
+                    <p class="text-gray-400">Configuração de segurança de redes em ambientes rurais usando FortiGate. Definição de regras de firewall e segmentação de rede para proteção da infraestrutura de TI.</p>
                 </a>
 
             </div>
@@ -101,24 +109,83 @@
             <h2 class="text-4xl mb-8">Habilidades</h2>
             <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <a href="https://github.com/DavidLSousa"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">HTML e CSS</a>
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    HTML, CSS
+                </a>
                 <a href="https://github.com/DavidLSousa"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">JavaScript e TypeScript</a>
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Node.js e TypeScript
+                </a>
                 <a href="https://github.com/DavidLSousa"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">Node.js</a>
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Vue.js
+                </a>
                 <a href="https://github.com/DavidLSousa"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">Python</a>
-                <a href="https://github.com/DavidLSousa" class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">C#
-                    .NET</a>
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Python
+                </a>
+                <a href="https://github.com/DavidLSousa" 
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    C# .NET
+                </a>
                 <a href="https://github.com/DavidLSousa"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition">.NET MAUI</a>
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    .NET MAUI
+                </a>
+                <a href="https://github.com/DavidLSousa"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Cybersecurity
+                </a>
+            </div>
+        </section>
+
+        <section class="text-center mb-16">
+            <h2 class="text-4xl mb-8">Certificações e Cursos</h2>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                <a href="https://cursos.alura.com.br/certificate/ade01e1e-18d4-4c31-aba1-fa62fe02c6c2?lang"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center content-center">Ciclo de vida de aplicações: modelando, desenvolvendo e implantando um software
+                </a>
+                <a href="#"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Desenvolvimento .NET - FIAP
+                </a>
+                <a href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=0c059f37fefe2233c6fe4bb5cfbbd4ed&action=view" 
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Dominando IoT - FIAP
+                </a>
+                <a href="https://certificados.descomplica.com.br/graduacao/3ac66bf5c6cac3cb702da4569b07b0bc36c2193779bd6702902ade841153e73e"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Arquitetura e Organização de Computadores
+                </a>
+                <a href="https://certificados.descomplica.com.br/graduacao/fe193ac6b60e7c086403dbeb3c1943c704a8ac5d81185e19b4405f9a0fd5f9e2"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Ferramentas e aplicações da inteligência artificial
+                </a>
+                <a href="https://certs.ibsec.com.br/?cert_hash=b0047ec4b9e39a1a"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Cybersecurity Awareness
+                </a>
+                <a href="https://certs.ibsec.com.br/?cert_hash=e9d55696d3444953"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Segurança em Linux
+                </a>
+                <a href="https://cursos.alura.com.br/certificate/6d2a0c42-a23f-4037-9457-46814f7cab65?lang"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Segurança de rede: firewall, WAF e SIEM
+                </a>
+                <a href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=d24efef7ee161d5242cc88d0b6f996e9&action=view"
+                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
+                    Cybersecurity Hacker Skills - FIAP
+                </a>
             </div>
         </section>
     </div>
 
-    <footer class="text-center p-8 bg-blue-900 text-white">
+    <footer class="text-center p-8 text-white">
         <p>Entre em contato:
-            <span data-js="link-form-email" class="cursor-pointer hover:text-gray-300">davidlsousa.dev@gmail.com</span>
+            <span data-js="link-form-email" class="cursor-pointer hover:text-gray-300 underline text-blue-900">
+                davidlsousa.dev@gmail.com
+            </span>
         </p>
     </footer>
 
