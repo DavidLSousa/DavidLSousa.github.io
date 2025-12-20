@@ -24,3 +24,35 @@ const handleSubmitForm = () => {
 
 linkFormEmail.addEventListener('click', handleSubmitForm)
 containerForm.addEventListener('click', closePopup)
+
+// Accordion functionality
+const accordionButtons = document.querySelectorAll('.accordion-button')
+
+accordionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const targetId = button.getAttribute('data-accordion')
+    const content = document.querySelector(`[data-content="${targetId}"]`)
+    const icon = button.querySelector('.accordion-icon')
+
+    // Close all other accordions
+    accordionButtons.forEach(otherButton => {
+      if (otherButton !== button) {
+        const otherId = otherButton.getAttribute('data-accordion')
+        const otherContent = document.querySelector(`[data-content="${otherId}"]`)
+        const otherIcon = otherButton.querySelector('.accordion-icon')
+
+        otherContent.style.maxHeight = '0'
+        otherIcon.style.transform = 'rotate(0deg)'
+      }
+    })
+
+    // Toggle current accordion
+    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+      content.style.maxHeight = '0'
+      icon.style.transform = 'rotate(0deg)'
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px'
+      icon.style.transform = 'rotate(180deg)'
+    }
+  })
+})
