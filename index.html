@@ -1,177 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio de David Sousa</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/popup.css">
-    <link rel="stylesheet" href="/css/default.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/popup.css" />
+    <link rel="stylesheet" href="/css/default.css" />
 
     <script defer type="module" src="./js/main.js"></script>
-</head>
+  </head>
 
-<body class="bg-gradient-to-b from-blue-900 to-black text-white font-mono">
+  <body class="bg-gradient-to-b from-blue-900 to-black text-white font-mono">
+    <header
+      class="flex flex-col items-center justify-center h-screen bg-white text-center"
+    >
+      <img
+        class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover mb-8"
+        src="/assets/photos/ft_portfolio.png"
+        alt="minha foto"
+      />
 
-    <header class="flex flex-col items-center justify-center h-screen bg-white text-center">
-        <img class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover mb-8" src="/assets/photos/ft_portfolio.png"
-            alt="minha foto">
+      <div>
+        <h1 class="text-5xl sm:text-6xl font-bold text-blue-900">
+          David Sousa
+        </h1>
+        <p class="font-bold text-black">Desenvolvedor Fullstack e Mobile</p>
 
-        <div>
-            <h1 class="text-5xl sm:text-6xl font-bold text-blue-900">David Sousa</h1>
-            <p class="font-bold text-black">Desenvolvedor Fullstack</p>
-
-            <div class="flex justify-center gap-4 p-16">
-                <div class="w-16 h-16 flex items-center">
-                    <a href="https://github.com/DavidLSousa">
-                        <img class="w-14 h-14 object-cover cursor-pointer" src="/assets/icons/github-mark.svg"
-                            alt="Github Logo">
-                    </a>
-                </div>
-                <div class="w-16 h-16 flex items-center">
-                    <a href="https://www.linkedin.com/in/davidlsousadev/">
-                        <img class="object-cover cursor-pointer" src="/assets/icons/LI-In-Bug.png" alt="LinkedIn Logo">
-                    </a>
-                </div>
-            </div>
+        <div class="flex justify-center gap-4 p-16">
+          <div class="w-16 h-16 flex items-center">
+            <a href="https://github.com/DavidLSousa">
+              <img
+                class="w-14 h-14 object-cover cursor-pointer"
+                src="/assets/icons/github-mark.svg"
+                alt="Github Logo"
+              />
+            </a>
+          </div>
+          <div class="w-16 h-16 flex items-center">
+            <a href="https://www.linkedin.com/in/davidlsousadev/">
+              <img
+                class="object-cover cursor-pointer"
+                src="/assets/icons/LI-In-Bug.png"
+                alt="LinkedIn Logo"
+              />
+            </a>
+          </div>
         </div>
+      </div>
     </header>
 
     <div class="container mx-auto p-8">
-        <section class="mb-16 align-center">
-            <h2 class=" text-center text-4xl mb-4">Sobre Mim</h2>
-            <p class="text-lg text-justify">
-                Desenvolvedor Fullstack focado em criar soluções robustas e escaláveis. Transformo ideias em
-                aplicações reais, desde aplicativos mobile até sistemas backend complexos. Minha experiência inclui
-                desenvolvimento de plataformas financeiras, sistemas de pagamento e APIs que atendem milhares de
-                usuários. Acredito em código limpo, arquiteturas bem pensadas e em sempre aprender algo novo.
-            </p>
-        </section>
+      <section class="mb-16 align-center">
+        <h2 class="text-center text-4xl mb-4">Sobre Mim</h2>
+        <p class="text-lg text-justify">
+          Desenvolvedor Fullstack e Mobile focado em criar soluções robustas e
+          escaláveis. Transformo ideias em aplicações reais, desde aplicativos
+          mobile até sistemas backend complexos. Minha experiência inclui
+          desenvolvimento de plataformas financeiras, sistemas de pagamento e
+          APIs que atendem milhares de usuários. Acredito em código limpo,
+          arquiteturas bem pensadas e em sempre aprender algo novo.
+        </p>
+      </section>
 
-        <section class="text-center mb-16">
-            <h2 class="text-4xl mb-8">Experiência Profissional</h2>
-            <div class="space-y-4 max-w-4xl mx-auto">
-                <!-- Accordion Item 1 -->
-                <div class="bg-gray-800 rounded overflow-hidden">
-                    <button class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition" data-accordion="exp1">
-                        <div>
-                            <h3 class="text-xl font-bold">Desenvolvedor Fullstack</h3>
-                            <p class="text-blue-400 text-sm">One Panel | Set 2025 - Presente</p>
-                        </div>
-                        <svg class="accordion-icon w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300" data-content="exp1">
-                        <div class="p-6 pt-0 text-gray-300 text-left">
-                            <p class="mb-3">Desenvolvimento de microsserviços escaláveis com Go, sistemas de pagamento, autenticação avançada e automação de infraestrutura.</p>
-                            <ul class="list-disc list-inside space-y-2 text-sm">
-                                <li>Microsserviços com Go (Gin) e Gorm com arquitetura orientada a eventos</li>
-                                <li>Sistema de pagamentos com API Mercado Pago e webhooks para processar transações</li>
-                                <li>Autenticação JWT/JWKS stateless e stateful (Redis) com refresh tokens e rotação de credenciais</li>
-                                <li>Automação de provisionamento de VPS com Ansible: execução remota de playbooks sob demanda, configuração automatizada de servidores Linux, gerenciamento de SSH (RSA/EC, passphrase) e sudo automation</li>
-                                <li>Serviço de automação para orquestrar playbooks Ansible remotamente via API</li>
-                                <li>Containerização com Docker e CI/CD com GitHub Actions</li>
-                                <li>Gerenciamento de MySQL, PostgreSQL e cache Redis</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Accordion Item 2 -->
-                <div class="bg-gray-800 rounded overflow-hidden">
-                    <button class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition" data-accordion="exp2">
-                        <div>
-                            <h3 class="text-xl font-bold">Desenvolvedor Mobile</h3>
-                            <p class="text-blue-400 text-sm">Ideia System | Mai 2025 - Dez 2025</p>
-                        </div>
-                        <svg class="accordion-icon w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300" data-content="exp2">
-                        <div class="p-6 pt-0 text-gray-300 text-left">
-                            <p class="mb-3">Desenvolvimento de aplicativos financeiros multiplataforma com React Native e backend NestJS.</p>
-                            <ul class="list-disc list-inside space-y-2 text-sm">
-                                <li>Três apps financeiros iOS/Android com React Native e Expo</li>
-                                <li>App bancário empresarial com transferências, pagamentos e dashboards</li>
-                                <li>App de pagamentos internacionais com gateway de cartão</li>
-                                <li>WebSockets para notificações em tempo real</li>
-                                <li>Internacionalização (i18n) multi-idiomas</li>
-                                <li>API RESTful para plataforma de bets (NestJS, PostgreSQL/Prisma, Redis)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <section class="text-center mb-16">
+        <h2 class="text-4xl mb-8">Experiência Profissional</h2>
+        <div class="space-y-4 max-w-4xl mx-auto">
+          <!-- Accordion Item 1 -->
+          <div class="bg-gray-800 rounded overflow-hidden">
+            <button
+              class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition"
+              data-accordion="exp1"
+            >
+              <div>
+                <h3 class="text-xl font-bold">
+                  Desenvolvedor Fullstack com foco em Mobile
+                </h3>
+                <p class="text-blue-400 text-sm">SwiftPAG | Maio 2025 - Atual</p>
+              </div>
+              <svg
+                class="accordion-icon w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+              data-content="exp1"
+            >
+              <div class="p-6 pt-0 text-gray-300 text-left">
+                <p class="mb-3">
+                  Desenvolvimento de soluções bancárias e mobile multiplataforma
+                  com foco em escalabilidade e integração com blockchain.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                  <li>
+                    <strong>Frontend:</strong> Manutenção e desenvolvimento de
+                    novas features com Next.js para plataforma multitenant e
+                    criação de Landing Pages.
+                  </li>
+                  <li>
+                    <strong>Mobile:</strong> Entrega de três aplicações
+                    financeiras (iOS/Android) utilizando React Native, Expo e
+                    TypeScript, com integrações Blockchain e Multi idioma.
+                  </li>
+                  <li>
+                    <strong>Banking:</strong> Implementação com integração a
+                    gateways de pagamento e fluxos de transferências, extratos e
+                    dashboards de gestão bancária.
+                  </li>
+                  <li>
+                    <strong>Tempo Real:</strong> Soluções via WebSockets para
+                    notificações transacionais em tempo real.
+                  </li>
+                  <li>
+                    <strong>Backend:</strong> APIs RESTful multitenant em NestJS
+                    com autenticação RBAC (JWT), Swagger, PostgreSQL/Prisma e
+                    Cache em Redis.
+                  </li>
+                  <li>
+                    <strong>Blockchain:</strong> Integração de operações na
+                    blockchain TRON, incluindo consultas e gestão de carteiras.
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section class="text-center mb-16">
-            <h2 class="text-4xl mb-8">Projetos</h2>
-            <div class="space-y-4 max-w-4xl mx-auto">
-                <!-- Accordion Project 1 -->
-                <div class="bg-gray-800 rounded overflow-hidden">
-                    <button class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition" data-accordion="proj1">
-                        <div>
-                            <h3 class="text-xl font-bold">ControlF - Gestão Financeira Pessoal</h3>
-                            <p class="text-blue-400 text-sm">React Native + Go (Gin/Gorm)</p>
-                        </div>
-                        <svg class="accordion-icon w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300" data-content="proj1">
-                        <div class="p-6 pt-0 text-gray-300 text-left">
-                            <p class="mb-3">Aplicação completa de controle financeiro pessoal com mobile e backend robusto.</p>
-                            <ul class="list-disc list-inside space-y-2 text-sm mb-4">
-                                <li>Frontend em React Native com interface intuitiva</li>
-                                <li>Backend em Go com Gin Framework e GORM</li>
-                                <li>Controle de receitas, despesas e categorização</li>
-                                <li>Relatórios financeiros e dashboards</li>
-                                <li>API RESTful com Clean Architecture (Hexagonal)</li>
-                                <li>Gerenciamento de transações, orçamentos e metas</li>
-                            </ul>
-                            <a href="https://github.com/DavidLSousa/controlF_back" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition">
-                                Ver no GitHub →
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <!-- Accordion Item 2 -->
+          <div class="bg-gray-800 rounded overflow-hidden">
+            <button
+              class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition"
+              data-accordion="exp2"
+            >
+              <div>
+                <h3 class="text-xl font-bold">Desenvolvedor Fullstack</h3>
+                <p class="text-blue-400 text-sm">
+                  One Panel | Contrato de 4 meses
+                </p>
+              </div>
+              <svg
+                class="accordion-icon w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+              data-content="exp2"
+            >
+              <div class="p-6 pt-0 text-gray-300 text-left">
+                <p class="mb-3">
+                  Arquitetura de microsserviços e automação de infraestrutura
+                  para serviços de hosting.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                  <li>
+                    <strong>Microsserviços:</strong> Desenvolvimento de serviços
+                    escaláveis em Go (Gin, Gorm) focados em alta disponibilidade
+                    para operações de hosting.
+                  </li>
+                  <li>
+                    <strong>Automação & Infra:</strong> Provisionamento dinâmico
+                    de VPS com Ansible e orquestração de containers (Docker
+                    Compose).
+                  </li>
+                  <li>
+                    <strong>Segurança:</strong> Implementação de fluxos híbridos
+                    de segurança (JWT/JWKS e Redis) com suporte a refresh
+                    tokens.
+                  </li>
+                  <li>
+                    <strong>Pagamentos & Qualidade:</strong> Integração com
+                    Mercado Pago, gestão de deploys (staging/produção) e code
+                    review (Git Flow).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <!-- Accordion Project 2 -->
-                <div class="bg-gray-800 rounded overflow-hidden">
-                    <button class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition" data-accordion="proj2">
-                        <div>
-                            <h3 class="text-xl font-bold">The Flash Cards</h3>
-                            <p class="text-blue-400 text-sm">React Native | App Educacional</p>
-                        </div>
-                        <svg class="accordion-icon w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300" data-content="proj2">
-                        <div class="p-6 pt-0 text-gray-300 text-left">
-                            <p class="mb-3">Aplicativo educacional para criação e estudo com flashcards personalizáveis.</p>
-                            <ul class="list-disc list-inside space-y-2 text-sm mb-4">
-                                <li>Sistema de cartões de estudo (flashcards) customizáveis</li>
-                                <li>Gerador de simulados categorizados</li>
-                                <li>Algoritmo de seleção aleatória de questões</li>
-                                <li>Tracking de progresso do usuário</li>
-                                <li>Estatísticas e dashboards de desempenho</li>
-                                <li>Interface intuitiva e responsiva</li>
-                            </ul>
-                            <a href="https://github.com/DavidLSousa/theflashcards" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition">
-                                Ver no GitHub →
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <section class="text-center mb-16">
+        <h2 class="text-4xl mb-8">Projetos</h2>
+        <div class="space-y-4 max-w-4xl mx-auto">
+          <!-- Accordion Project 1 -->
+          <div class="bg-gray-800 rounded overflow-hidden">
+            <button
+              class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition"
+              data-accordion="proj1"
+            >
+              <div>
+                <h3 class="text-xl font-bold">
+                  ControlF - Gestão Financeira Pessoal
+                </h3>
+                <p class="text-blue-400 text-sm">
+                  React Native + Go (Gin/Gorm)
+                </p>
+              </div>
+              <svg
+                class="accordion-icon w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+              data-content="proj1"
+            >
+              <div class="p-6 pt-0 text-gray-300 text-left">
+                <p class="mb-3">
+                  Aplicação completa de controle financeiro pessoal com mobile e
+                  backend robusto.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-sm mb-4">
+                  <li>Frontend em React Native com interface intuitiva</li>
+                  <li>Backend em Go com Gin Framework e GORM</li>
+                  <li>Controle de receitas, despesas e categorização</li>
+                  <li>Relatórios financeiros e dashboards</li>
+                  <li>API RESTful com Clean Architecture (Hexagonal)</li>
+                  <li>Gerenciamento de transações, orçamentos e metas</li>
+                </ul>
+                <a
+                  href="https://github.com/DavidLSousa/controlF_back"
+                  target="_blank"
+                  class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                >
+                  Ver no GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
 
-                <!-- Accordion Project 3 -->
-                <!-- <div class="bg-gray-800 rounded overflow-hidden">
+          <!-- Accordion Project 2 -->
+          <div class="bg-gray-800 rounded overflow-hidden">
+            <button
+              class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition"
+              data-accordion="proj2"
+            >
+              <div>
+                <h3 class="text-xl font-bold">The Flash Cards</h3>
+                <p class="text-blue-400 text-sm">
+                  React Native | App Educacional
+                </p>
+              </div>
+              <svg
+                class="accordion-icon w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+              data-content="proj2"
+            >
+              <div class="p-6 pt-0 text-gray-300 text-left">
+                <p class="mb-3">
+                  Aplicativo educacional para criação e estudo com flashcards
+                  personalizáveis.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-sm mb-4">
+                  <li>
+                    Sistema de cartões de estudo (flashcards) customizáveis
+                  </li>
+                  <li>Gerador de simulados categorizados</li>
+                  <li>Algoritmo de seleção aleatória de questões</li>
+                  <li>Tracking de progresso do usuário</li>
+                  <li>Estatísticas e dashboards de desempenho</li>
+                  <li>Interface intuitiva e responsiva</li>
+                </ul>
+                <a
+                  href="https://github.com/DavidLSousa/theflashcards"
+                  target="_blank"
+                  class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                >
+                  Ver no GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Project 3 -->
+          <!-- <div class="bg-gray-800 rounded overflow-hidden">
                     <button class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition" data-accordion="proj3">
                         <div>
                             <h3 class="text-xl font-bold">Apps Financeiros Mobile</h3>
@@ -196,167 +344,221 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="text-center mb-16">
-            <h2 class="text-4xl mb-8">Habilidades</h2>
-            <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Go (Golang)
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Gin Framework + GORM
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    TypeScript
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    React Native
-                </div>
-                <!-- <div class="bg-gray-800 p-4 rounded transition content-center">
-                    NestJS + Prisma ORM
-                </div> -->
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    PostgreSQL e MySQL
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Redis
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Docker
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    WebSockets
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    JWT & JWKS
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    API RESTful
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Clean Architecture
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Microsserviços
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Git & GitHub
-                </div>
-                <div class="bg-gray-800 p-4 rounded transition content-center">
-                    Ansible
-                </div>
-            </div>
-        </section>
+      <section class="text-center mb-16">
+        <h2 class="text-4xl mb-8">Habilidades</h2>
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Go (Golang)
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Gin Framework + GORM
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            TypeScript
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            React Native
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            NestJS + Prisma ORM
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Next.js
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Blockchain (TRON)
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            PostgreSQL e MySQL
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Redis
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Docker
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            WebSockets
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            JWT & JWKS
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            API RESTful
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Clean Architecture
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Microsserviços
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Git & GitHub
+          </div>
+          <div class="bg-gray-800 p-4 rounded transition content-center">
+            Ansible
+          </div>
+        </div>
+      </section>
 
-        <section class="text-center mb-16">
-            <h2 class="text-4xl mb-8">Formação Acadêmica</h2>
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div class="bg-gray-800 p-6 rounded">
-                    <h3 class="text-xl font-bold mb-2">Tecnólogo em Cibersegurança</h3>
-                    <p class="text-blue-400">FIAP - Centro Universitário</p>
-                    <p class="text-gray-400">Conclusão prevista: Junho 2026</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded">
-                    <h3 class="text-xl font-bold mb-2">Bacharelado em Sistemas de Informação</h3>
-                    <p class="text-blue-400">Descomplica</p>
-                    <p class="text-gray-400">Conclusão prevista: Janeiro 2029</p>
-                </div>
-            </div>
-        </section>
+      <section class="text-center mb-16">
+        <h2 class="text-4xl mb-8">Formação Acadêmica</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold mb-2">Tecnólogo em Cibersegurança</h3>
+            <p class="text-blue-400">FIAP - Centro Universitário</p>
+            <p class="text-gray-400">Conclusão prevista: Junho 2026</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded">
+            <h3 class="text-xl font-bold mb-2">
+              Bacharelado em Sistemas de Informação
+            </h3>
+            <p class="text-blue-400">Descomplica</p>
+            <p class="text-gray-400">Conclusão prevista: Janeiro 2029</p>
+          </div>
+        </div>
+      </section>
 
-        <section class="text-center mb-16">
-            <h2 class="text-4xl mb-8">Certificações e Cursos</h2>
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-                <a href="https://cursos.alura.com.br/certificate/31e09201-c2f7-4465-9b8d-c0847b06a06a?lang"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    AWS - Amazon Lightsail
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/ade01e1e-18d4-4c31-aba1-fa62fe02c6c2?lang"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    Ciclo de Vida de Aplicações
-                </a>
-                <a href="#"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    DevOps: Docker - Alura
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/6d2a0c42-a23f-4037-9457-46814f7cab65?lang"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    Segurança de Rede: Firewall, WAF e SIEM
-                </a>
-                <a href="https://certs.ibsec.com.br/?cert_hash=b0047ec4b9e39a1a"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    Cybersecurity Awareness
-                </a>
-                <a href="https://certs.ibsec.com.br/?cert_hash=e9d55696d3444953"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    Segurança em Linux
-                </a>
-                <a href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=d24efef7ee161d5242cc88d0b6f996e9&action=view"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    Cybersecurity Hacker Skills - FIAP
-                </a>
-                <a href="https://certificados.descomplica.com.br/graduacao/3ac66bf5c6cac3cb702da4569b07b0bc36c2193779bd6702902ade841153e73e"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    Arquitetura e Organização de Computadores
-                </a>
-                <a href="https://certificados.descomplica.com.br/graduacao/fe193ac6b60e7c086403dbeb3c1943c704a8ac5d81185e19b4405f9a0fd5f9e2"
-                    class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center">
-                    Ferramentas e Aplicações da IA
-                </a>
-            </div>
-        </section>
+      <section class="text-center mb-16">
+        <h2 class="text-4xl mb-8">Certificações e Cursos</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <a
+            href="https://cursos.alura.com.br/certificate/31e09201-c2f7-4465-9b8d-c0847b06a06a?lang"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            AWS - Amazon Lightsail
+          </a>
+          <a
+            href="https://cursos.alura.com.br/certificate/ade01e1e-18d4-4c31-aba1-fa62fe02c6c2?lang"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            Ciclo de Vida de Aplicações
+          </a>
+          <a
+            href="#"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            DevOps: Docker - Alura
+          </a>
+          <a
+            href="https://cursos.alura.com.br/certificate/6d2a0c42-a23f-4037-9457-46814f7cab65?lang"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            Segurança de Rede: Firewall, WAF e SIEM
+          </a>
+          <a
+            href="https://certs.ibsec.com.br/?cert_hash=b0047ec4b9e39a1a"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            Cybersecurity Awareness
+          </a>
+          <a
+            href="https://certs.ibsec.com.br/?cert_hash=e9d55696d3444953"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            Segurança em Linux
+          </a>
+          <a
+            href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=d24efef7ee161d5242cc88d0b6f996e9&action=view"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            Cybersecurity Hacker Skills - FIAP
+          </a>
+          <a
+            href="https://certificados.descomplica.com.br/graduacao/3ac66bf5c6cac3cb702da4569b07b0bc36c2193779bd6702902ade841153e73e"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            Arquitetura e Organização de Computadores
+          </a>
+          <a
+            href="https://certificados.descomplica.com.br/graduacao/fe193ac6b60e7c086403dbeb3c1943c704a8ac5d81185e19b4405f9a0fd5f9e2"
+            class="bg-gray-800 p-4 rounded hover:bg-gray-600 transition content-center"
+          >
+            Ferramentas e Aplicações da IA
+          </a>
+        </div>
+      </section>
     </div>
 
     <footer class="text-center p-8 text-white">
-        <p>Entre em contato:
-            <span data-js="link-form-email" class="cursor-pointer hover:text-gray-300 underline text-blue-900">
-                davidlsousa.dev@gmail.com
-            </span>
-        </p>
+      <p>
+        Entre em contato:
+        <span
+          data-js="link-form-email"
+          class="cursor-pointer hover:text-gray-300 underline text-blue-900"
+        >
+          davidlsousa.dev@gmail.com
+        </span>
+      </p>
     </footer>
 
     <!-- popup -->
-    <div data-js="popup-form-email"
-        class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden close-popup">
-        <div class="bg-white text-gray-800 p-8 rounded-lg max-w-lg w-full">
-            <h2 class="text-center text-2xl font-bold mb-6">
-                Envie seu email
-            </h2>
+    <div
+      data-js="popup-form-email"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden close-popup"
+    >
+      <div class="bg-white text-gray-800 p-8 rounded-lg max-w-lg w-full">
+        <h2 class="text-center text-2xl font-bold mb-6">Envie seu email</h2>
 
-            <form data-js="form-popup" action="https://formsubmit.co/ajax/f55977069a4f272fed82a2f69dce62f5"
-                method="post" class="space-y-4">
+        <form
+          data-js="form-popup"
+          action="https://formsubmit.co/ajax/f55977069a4f272fed82a2f69dce62f5"
+          method="post"
+          class="space-y-4"
+        >
+          <div>
+            <label for="nome" class="block text-lg font-medium mb-2"
+              >Nome</label
+            >
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded-lg p-2"
+              id="nome"
+              name="nome"
+              required
+            />
+          </div>
 
-                <div>
-                    <label for="nome" class="block text-lg font-medium mb-2">Nome</label>
-                    <input type="text" class="w-full border border-gray-300 rounded-lg p-2" id="nome" name="nome"
-                        required>
-                </div>
+          <div>
+            <label for="email" class="block text-lg font-medium mb-2"
+              >E-mail</label
+            >
+            <input
+              type="email"
+              class="w-full border border-gray-300 rounded-lg p-2"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
 
-                <div>
-                    <label for="email" class="block text-lg font-medium mb-2">E-mail</label>
-                    <input type="email" class="w-full border border-gray-300 rounded-lg p-2" id="email" name="email"
-                        required>
-                </div>
+          <div>
+            <label for="mgs" class="block text-lg font-medium mb-2"
+              >Mensagem</label
+            >
+            <textarea
+              class="w-full border border-gray-300 rounded-lg p-2"
+              id="mgs"
+              rows="3"
+              name="mgs"
+              required
+            ></textarea>
+          </div>
 
-                <div>
-                    <label for="mgs" class="block text-lg font-medium mb-2">Mensagem</label>
-                    <textarea class="w-full border border-gray-300 rounded-lg p-2" id="mgs" rows="3" name="mgs"
-                        required></textarea>
-                </div>
-
-                <button type="submit" data-js="btn-popup"
-                    class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-700">
-                    Enviar
-                </button>
-            </form>
-        </div>
+          <button
+            type="submit"
+            data-js="btn-popup"
+            class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-700"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
 
 <!-- 
