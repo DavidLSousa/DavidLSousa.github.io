@@ -210,11 +210,9 @@
             >
               <div>
                 <h3 class="text-xl font-bold">
-                  ControlF - Gestão Financeira Pessoal
+                  XPOWeb | Aplicação de Catálogos para empresas
                 </h3>
-                <p class="text-blue-400 text-sm">
-                  React Native + Go (Gin/Gorm)
-                </p>
+                <p class="text-blue-400 text-sm">Next.js + Go (Golang)</p>
               </div>
               <svg
                 class="accordion-icon w-6 h-6 transition-transform duration-300"
@@ -236,21 +234,24 @@
             >
               <div class="p-6 pt-0 text-gray-300 text-left">
                 <p class="mb-3">
-                  Aplicação completa de controle financeiro pessoal com mobile e
-                  backend robusto.
+                  Sistema Multi-Tenant para catálogos virtuais para empresas.
+                  Conta com um painel para o cliente personalizar catálogos e
+                  distribuído como um whitelabel.
                 </p>
-                <ul class="list-disc list-inside space-y-2 text-sm mb-4">
-                  <li>Frontend em React Native com interface intuitiva</li>
-                  <li>Backend em Go com Gin Framework e GORM</li>
-                  <li>Controle de receitas, despesas e categorização</li>
-                  <li>Relatórios financeiros e dashboards</li>
-                  <li>API RESTful com Clean Architecture (Hexagonal)</li>
-                  <li>Gerenciamento de transações, orçamentos e metas</li>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                  <li>
+                    Sua construção utilizou Next para o frontend e Go no backend
+                    com PostgreSQL como Banco de dados.
+                  </li>
+                  <li>
+                    Toda aplicação é modularizada e documentada com Swagger.
+                  </li>
+                  <li>Automatização de deploy utilizando GitHub Actions.</li>
                 </ul>
                 <a
-                  href="https://github.com/DavidLSousa/controlF_back"
+                  href="https://github.com/DavidLSousa/xpoweb-back"
                   target="_blank"
-                  class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                  class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
                 >
                   Ver no GitHub →
                 </a>
@@ -265,9 +266,11 @@
               data-accordion="proj2"
             >
               <div>
-                <h3 class="text-xl font-bold">The Flash Cards</h3>
+                <h3 class="text-xl font-bold">
+                  Agrocenter Pet Shop | Aplicativo React Native + Expo
+                </h3>
                 <p class="text-blue-400 text-sm">
-                  React Native | App Educacional
+                  React Native + Expo | Gestão Offline
                 </p>
               </div>
               <svg
@@ -290,18 +293,72 @@
             >
               <div class="p-6 pt-0 text-gray-300 text-left">
                 <p class="mb-3">
-                  Aplicativo educacional para criação e estudo com flashcards
-                  personalizáveis.
+                  Aplicativo de gerenciamento de agenda, permitindo criação de
+                  pets, procedimentos baseados no tipo, status de pagamento,
+                  recorrência de visitas e controle financeiro básico.
+                  Funcionamento 100% local.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                  <li>
+                    Todo feito com base em um template criado por mim, versátil
+                    para escalar o aplicativo facilmente em futuras versões.
+                  </li>
+                  <li>Controle de agenda, pets e financeiro integrado.</li>
+                </ul>
+                <a
+                  href="https://github.com/DavidLSousa/agrocenter_app"
+                  target="_blank"
+                  class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                >
+                  Ver no GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Project 3 -->
+          <div class="bg-gray-800 rounded overflow-hidden">
+            <button
+              class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition"
+              data-accordion="proj3"
+            >
+              <div>
+                <h3 class="text-xl font-bold">
+                  The Flash Cards | Aplicativo de Cards de estudo
+                </h3>
+                <p class="text-blue-400 text-sm">
+                  React Native | App Educacional
+                </p>
+              </div>
+              <svg
+                class="accordion-icon w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+              data-content="proj3"
+            >
+              <div class="p-6 pt-0 text-gray-300 text-left">
+                <p class="mb-3">
+                  Desenvolvi aplicativo educacional em React Native com sistema
+                  de cartões de estudo (flashcards) personalizáveis.
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-sm mb-4">
                   <li>
-                    Sistema de cartões de estudo (flashcards) customizáveis
+                    Implementei gerador de simulados categorizados com algoritmo
+                    de seleção aleatória e tracking de progresso.
                   </li>
-                  <li>Gerador de simulados categorizados</li>
-                  <li>Algoritmo de seleção aleatória de questões</li>
-                  <li>Tracking de progresso do usuário</li>
-                  <li>Estatísticas e dashboards de desempenho</li>
-                  <li>Interface intuitiva e responsiva</li>
+                  <li>Interface intuitiva focada na experiência de estudo.</li>
                 </ul>
                 <a
                   href="https://github.com/DavidLSousa/theflashcards"
@@ -314,32 +371,64 @@
             </div>
           </div>
 
-          <!-- Accordion Project 3 -->
-          <!-- <div class="bg-gray-800 rounded overflow-hidden">
-                    <button class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition" data-accordion="proj3">
-                        <div>
-                            <h3 class="text-xl font-bold">Apps Financeiros Mobile</h3>
-                            <p class="text-blue-400 text-sm">React Native + Expo | iOS & Android</p>
-                        </div>
-                        <svg class="accordion-icon w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300" data-content="proj3">
-                        <div class="p-6 pt-0 text-gray-300 text-left">
-                            <p class="mb-3">Desenvolvimento de aplicativos financeiros multiplataforma com funcionalidades completas.</p>
-                            <ul class="list-disc list-inside space-y-2 text-sm mb-4">
-                                <li>Transferências bancárias e depósitos</li>
-                                <li>Sistema de pagamentos completo</li>
-                                <li>Extrato em tempo real com WebSockets</li>
-                                <li>Dashboards financeiros interativos</li>
-                                <li>Pagamentos internacionais com gateway</li>
-                                <li>Internacionalização (i18n) multi-idiomas</li>
-                                <li>Notificações push em tempo real</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
+          <!-- Accordion Project 4 -->
+          <div class="bg-gray-800 rounded overflow-hidden">
+            <button
+              class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition"
+              data-accordion="proj4"
+            >
+              <div>
+                <h3 class="text-xl font-bold">
+                  ControlF | Aplicativo de Gestão Financeira Pessoal
+                </h3>
+                <p class="text-blue-400 text-sm">
+                  React Native + NestJS | Em Desenvolvimento
+                </p>
+              </div>
+              <svg
+                class="accordion-icon w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+              data-content="proj4"
+            >
+              <div class="p-6 pt-0 text-gray-300 text-left">
+                <p class="mb-3">
+                  Aplicação em desenvolvimento em React Native e backend em
+                  NestJS focada em controle financeiro robusto.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-sm mb-4">
+                  <li>
+                    Implementei funcionalidades de controle de receitas,
+                    despesas, categorização e relatórios financeiros.
+                  </li>
+                  <li>
+                    Criei API RESTful para gerenciamento de transações,
+                    orçamentos e metas financeiras, aplicando Clean
+                    Architecture.
+                  </li>
+                </ul>
+                <a
+                  href="https://github.com/DavidLSousa/controlF_back"
+                  target="_blank"
+                  class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                >
+                  Ver no GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
