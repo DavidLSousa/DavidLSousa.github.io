@@ -434,57 +434,125 @@
 
       <section class="text-center mb-16">
         <h2 class="text-4xl mb-8">Habilidades</h2>
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Go (Golang)
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Go Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >Go (Golang)</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold"
+            >
+              Gin Framework + GORM
+            </div>
           </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Gin Framework + GORM
+
+          <!-- NestJS Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >NestJS</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold px-2 text-center"
+            >
+              TypeScript, Prisma ORM, JWT & JWKS
+            </div>
           </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            TypeScript
+
+          <!-- Next.js Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >Frontend</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold"
+            >
+              Next.js, TailwindCSS & WebSockets
+            </div>
           </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            React Native
+
+          <!-- React Native Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >React Native</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold"
+            >
+              Expo & Multiplataforma
+            </div>
           </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            NestJS + Prisma ORM
+
+          <!-- Databases Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >Bancos de Dados</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold"
+            >
+              PostgreSQL, MySQL & Redis
+            </div>
           </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Next.js
+
+          <!-- Architecture Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >Arquitetura</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold px-2 text-center"
+            >
+              Clean Arch, Microsserviços & REST
+            </div>
           </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Blockchain (TRON)
+
+          <!-- DevOps Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >DevOps & Infra</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold"
+            >
+              Docker, Ansible & Git Flow
+            </div>
           </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            PostgreSQL e MySQL
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Redis
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Docker
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            WebSockets
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            JWT & JWKS
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            API RESTful
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Clean Architecture
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Microsserviços
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Git & GitHub
-          </div>
-          <div class="bg-gray-800 p-4 rounded transition content-center">
-            Ansible
+
+          <!-- Blockchain Card -->
+          <div
+            class="skill-card group relative bg-gray-800 p-6 rounded-lg transition-all duration-300 hover:bg-gray-700 cursor-pointer min-h-[140px] flex flex-col justify-center items-center overflow-hidden border border-transparent hover:border-blue-500 hover:p-10 group-[.active]:p-10 group-[.active]:bg-gray-700 group-[.active]:border-blue-500"
+          >
+            <span
+              class="text-xl font-bold transition-all duration-300 group-hover:-translate-y-3 group-[.active]:-translate-y-3"
+              >Cripto</span
+            >
+            <div
+              class="absolute bottom-6 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-[.active]:opacity-100 group-[.active]:translate-y-0 transition-all duration-300 text-sm text-blue-400 font-bold"
+            >
+              Blockchain (TRON) & Web3
+            </div>
           </div>
         </div>
       </section>

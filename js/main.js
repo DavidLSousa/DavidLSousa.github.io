@@ -56,3 +56,20 @@ accordionButtons.forEach(button => {
     }
   })
 })
+
+// Skill cards interaction for mobile
+const skillCards = document.querySelectorAll('.skill-card')
+
+skillCards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Toggle active class on current card
+    const isActive = card.classList.contains('active')
+    
+    // Deactivate all others
+    skillCards.forEach(otherCard => otherCard.classList.remove('active'))
+    
+    if (!isActive) {
+      card.classList.add('active')
+    }
+  })
+})
