@@ -73,3 +73,56 @@ skillCards.forEach(card => {
     }
   })
 })
+
+// Modal Photos functionality
+const modalPhotos = document.getElementById('modal-photos');
+const modalPhotosContent = document.getElementById('modal-photos-content');
+const closeModalPhotos = document.getElementById('close-modal-photos');
+const viewPhotoButtons = document.querySelectorAll('.btn-view-photos');
+
+viewPhotoButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    e.stopPropagation(); // Avoid triggering accordion if it was inside a button
+    const photos = JSON.parse(button.getAttribute('data-photos'));
+    modalPhotosContent.innerHTML = ''; // Clear previous photos
+    
+    photos.forEach(photoPath => {
+      const img = document.createElement('img');
+      img.src = photoPath;
+      img.alt = 'Projeto Screenshot';
+      img.className = 'w-full rounded-lg shadow-md border border-gray-700 transition-all duration-300';
+      img.loading = 'lazy';
+      
+      // Check orientation after load
+      img.onload = () => {
+        if (img.naturalWidth > img.naturalHeight) {
+          img.classList.add('sm:col-span-2');
+        }
+      };
+      
+      modalPhotosContent.appendChild(img);
+    });
+    
+    modalPhotos.classList.remove('hidden');
+    modalPhotos.classList.add('flex');
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
+  });
+});
+
+const hideModal = () => {
+  modalPhotos.classList.add('hidden');
+  modalPhotos.classList.remove('flex');
+  document.body.style.overflow = ''; // Restore background scroll
+};
+
+if (closeModalPhotos) {
+  closeModalPhotos.addEventListener('click', hideModal);
+}
+
+if (modalPhotos) {
+  modalPhotos.addEventListener('click', (event) => {
+    if (event.target === modalPhotos) {
+      hideModal();
+    }
+  });
+}

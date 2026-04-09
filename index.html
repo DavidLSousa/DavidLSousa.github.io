@@ -248,13 +248,21 @@
                   </li>
                   <li>Automatização de deploy utilizando GitHub Actions.</li>
                 </ul>
-                <a
-                  href="https://github.com/DavidLSousa/xpoweb-back"
-                  target="_blank"
-                  class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
-                >
-                  Ver no GitHub →
-                </a>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <a
+                    href="https://github.com/DavidLSousa/xpoweb-back"
+                    target="_blank"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                  >
+                    Ver no GitHub →
+                  </a>
+                  <button
+                    class="btn-view-photos inline-block bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm transition"
+                    data-photos='["/assets/projs/xpoweb/Captura de Tela 2026-04-09 às 18.58.19.png", "/assets/projs/xpoweb/Captura de Tela 2026-04-09 às 18.58.47.png", "/assets/projs/xpoweb/Captura de Tela 2026-04-09 às 18.59.05.png", "/assets/projs/xpoweb/Captura de Tela 2026-04-09 às 19.01.25.png"]'
+                  >
+                    Ver fotos
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -305,13 +313,21 @@
                   </li>
                   <li>Controle de agenda, pets e financeiro integrado.</li>
                 </ul>
-                <a
-                  href="https://github.com/DavidLSousa/agrocenter_app"
-                  target="_blank"
-                  class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
-                >
-                  Ver no GitHub →
-                </a>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <a
+                    href="https://github.com/DavidLSousa/agrocenter_app"
+                    target="_blank"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                  >
+                    Ver no GitHub →
+                  </a>
+                  <button
+                    class="btn-view-photos inline-block bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm transition"
+                    data-photos='["/assets/projs/agrocenter/Screenshot_1775771740.png", "/assets/projs/agrocenter/Screenshot_1775771747.png", "/assets/projs/agrocenter/Screenshot_1775771753.png", "/assets/projs/agrocenter/Screenshot_1775771757.png", "/assets/projs/agrocenter/Screenshot_1775771762.png"]'
+                  >
+                    Ver fotos
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -360,13 +376,21 @@
                   </li>
                   <li>Interface intuitiva focada na experiência de estudo.</li>
                 </ul>
-                <a
-                  href="https://github.com/DavidLSousa/theflashcards"
-                  target="_blank"
-                  class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
-                >
-                  Ver no GitHub →
-                </a>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <a
+                    href="https://github.com/DavidLSousa/theflashcards"
+                    target="_blank"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                  >
+                    Ver no GitHub →
+                  </a>
+                  <button
+                    class="btn-view-photos inline-block bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm transition"
+                    data-photos='["/assets/projs/theflashcards/tfc_01.jpeg", "/assets/projs/theflashcards/tfc_02.jpeg", "/assets/projs/theflashcards/tfc_03.jpeg", "/assets/projs/theflashcards/tfc_04.jpeg", "/assets/projs/theflashcards/tfc_05.jpeg"]'
+                  >
+                    Ver fotos
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -419,16 +443,56 @@
                     Architecture.
                   </li>
                 </ul>
-                <a
-                  href="https://github.com/DavidLSousa/controlF_back"
-                  target="_blank"
-                  class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
-                >
-                  Ver no GitHub →
-                </a>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <a
+                    href="https://github.com/DavidLSousa/controlF_back"
+                    target="_blank"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                  >
+                    Ver no GitHub →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Modal para Fotos dos Projetos -->
+      <div
+        id="modal-photos"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-90 p-4"
+      >
+        <div
+          class="bg-gray-900 rounded-lg max-w-5xl w-full max-h-[90vh] flex flex-col overflow-hidden border border-gray-700 shadow-2xl"
+        >
+          <!-- Header do Modal -->
+          <div
+            class="p-4 border-b border-gray-700 flex justify-between items-center bg-gray-800"
+          >
+            <h3 class="text-xl font-bold">Fotos do Projeto</h3>
+            <button id="close-modal-photos" class="text-gray-400 hover:text-white transition">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <!-- Área de Fotos com Scroll -->
+          <div id="modal-photos-content" class="p-6 overflow-y-auto flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
+            <!-- Fotos serão inseridas aqui via JS -->
+          </div>
+        </div>
+      </div>
         </div>
       </section>
 
