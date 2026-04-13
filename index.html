@@ -234,14 +234,14 @@
             >
               <div class="p-6 pt-0 text-gray-300 text-left">
                 <p class="mb-3">
-                  Criação de uma CLI robusta para abstrair a complexidade de builds mobile, substituindo fluxos baseados em Makefiles por uma ferramenta Node.js moderna e tipada.
+                  Criação de uma CLI para abstrair a complexidade de builds mobile, substituindo fluxos baseados em Makefiles por uma ferramenta Node.js moderna e tipada.
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-sm">
                   <li>
-                    <strong>Diferencial Técnico:</strong> Desenvolvimento de um sistema de tratamento de erros para credenciais Apple/Google durante o processo de build, evitando falhas silenciosas no pipeline.
+                    Desenvolvimento de um sistema de tratamento de erros para credenciais Apple/Google durante o processo de build, evitando falhas silenciosas no pipeline.
                   </li>
                   <li>
-                    <strong>Documentação & Marketing:</strong> Arquitetura e deploy de uma Landing Page dedicada para a ferramenta, focada em documentação técnica e experiência do usuário (DevEx).
+                    Arquitetura e deploy de uma Landing Page dedicada para a ferramenta, focada em documentação técnica e experiência do usuário (DevEx).
                   </li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mt-4">
@@ -264,6 +264,68 @@
             </div>
           </div>
 
+          <!-- Accordion Project 6 (Expo Launchpad) -->
+          <div class="bg-gray-800 rounded overflow-hidden">
+            <button
+              class="accordion-button w-full flex justify-between items-center p-6 text-left hover:bg-gray-700 transition"
+              data-accordion="proj6"
+            >
+              <div>
+                <h3 class="text-xl font-bold">
+                  Expo Launchpad | Opensource
+                </h3>
+                <p class="text-blue-400 text-sm">TypeScript + React Native (Expo) | Boilerplate Escalável</p>
+              </div>
+              <svg
+                class="accordion-icon w-6 h-6 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+              data-content="proj6"
+            >
+              <div class="p-6 pt-0 text-gray-300 text-left">
+                <p class="mb-3">
+                  Arquitetura base para React Native (Expo) com foco em escalabilidade.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-sm">
+                  <li>
+                    <strong>Arquitetura & Design:</strong> DDD, design tokens (dark/light e multi idiomas), mock simples e centralizado sem dependências externas.
+                  </li>
+                  <li>
+                    <strong>Features Técnicas:</strong> React Query, Axios, suporte offline e tooling completo (Husky, ESLint, Jest).
+                  </li>
+                </ul>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <a
+                    href="https://github.com/DavidLSousa/expo-launchpad"
+                    target="_blank"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition"
+                  >
+                    Ver no GitHub →
+                  </a>
+                  <a
+                    href="https://expo-launchpad.vercel.app"
+                    target="_blank"
+                    class="inline-block bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm transition"
+                  >
+                    Acessar Projeto →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Accordion Project 1 -->
           <div class="bg-gray-800 rounded overflow-hidden">
             <button
@@ -274,7 +336,7 @@
                 <h3 class="text-xl font-bold">
                   XPOWeb | Aplicação de Catálogos para empresas
                 </h3>
-                <p class="text-blue-400 text-sm">Next.js + Go (Golang)</p>
+                <p class="text-blue-400 text-sm">Next.js + Go (Golang) | Multi-Tenant</p>
               </div>
               <svg
                 class="accordion-icon w-6 h-6 transition-transform duration-300"
@@ -296,19 +358,15 @@
             >
               <div class="p-6 pt-0 text-gray-300 text-left">
                 <p class="mb-3">
-                  Sistema Multi-Tenant para catálogos virtuais para empresas.
-                  Conta com um painel para o cliente personalizar catálogos e
-                  distribuído como um whitelabel.
+                  Sistema multi-tenant de catálogos white-label com painel de personalização.
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-sm">
                   <li>
-                    Sua construção utilizou Next para o frontend e Go no backend
-                    com PostgreSQL como Banco de dados.
+                    Desenvolvido com Next.js, Go e PostgreSQL, apresentando arquitetura modular e desacoplada.
                   </li>
                   <li>
-                    Toda aplicação é modularizada e documentada com Swagger.
+                    Documentação completa com Swagger e pipeline de deploy automatizado (GitHub Actions).
                   </li>
-                  <li>Automatização de deploy utilizando GitHub Actions.</li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mt-4">
                   <a
@@ -363,17 +421,15 @@
             >
               <div class="p-6 pt-0 text-gray-300 text-left">
                 <p class="mb-3">
-                  Aplicativo de gerenciamento de agenda, permitindo criação de
-                  pets, procedimentos baseados no tipo, status de pagamento,
-                  recorrência de visitas e controle financeiro básico.
-                  Funcionamento 100% local.
+                  Aplicativo em React Native + Expo para gestão de agenda, pets, procedimentos, pagamentos e recorrência.
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-sm">
                   <li>
-                    Todo feito com base em um template criado por mim, versátil
-                    para escalar o aplicativo facilmente em futuras versões.
+                    Funciona 100% offline com SQLite e controle financeiro básico integrado.
                   </li>
-                  <li>Controle de agenda, pets e financeiro integrado.</li>
+                  <li>
+                    Desenvolvido com base em um template escalável para facilitar novas funcionalidades.
+                  </li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mt-4">
                   <a
@@ -428,15 +484,13 @@
             >
               <div class="p-6 pt-0 text-gray-300 text-left">
                 <p class="mb-3">
-                  Desenvolvi aplicativo educacional em React Native com sistema
-                  de cartões de estudo (flashcards) personalizáveis.
+                  App em React Native com sistema de flashcards personalizáveis.
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-sm mb-4">
                   <li>
-                    Implementei gerador de simulados categorizados com algoritmo
-                    de seleção aleatória e tracking de progresso.
+                    Implementação de simulados com seleção aleatória e acompanhamento detalhado de progresso.
                   </li>
-                  <li>Interface intuitiva focada na experiência de estudo.</li>
+                  <li>Foco em UX para otimizar a experiência de estudo de longo prazo.</li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mt-4">
                   <a
@@ -491,18 +545,14 @@
             >
               <div class="p-6 pt-0 text-gray-300 text-left">
                 <p class="mb-3">
-                  Aplicação em desenvolvimento em React Native e backend em
-                  NestJS focada em controle financeiro robusto.
+                  App em desenvolvimento para controle financeiro robusto.
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-sm mb-4">
                   <li>
-                    Implementei funcionalidades de controle de receitas,
-                    despesas, categorização e relatórios financeiros.
+                    API RESTful construída com Clean Architecture para gerenciamento de transações, orçamentos e metas.
                   </li>
                   <li>
-                    Criei API RESTful para gerenciamento de transações,
-                    orçamentos e metas financeiras, aplicando Clean
-                    Architecture.
+                    Foco em segurança de dados e relatórios financeiros detalhados.
                   </li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mt-4">
